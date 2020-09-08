@@ -1,0 +1,76 @@
+\documentclass[12pt,fleqn, parskip=full]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\title{NUEN 301 Notes}
+\author{Donald Doyle }
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Material for Test One}
+
+I = beam intensity $\frac{neutrons}{cm^2 s}$\\
+u = neutron density $\frac{neutrons}{cm^3}$\\
+v = neutron speed $\frac{cm}{s}$\\
+A = target area $cm^2$\\
+$\Delta x$ = target thickness cm\\
+$\sigma_t$ = constant of proportionality [area per nucleus]\\
+Reaction rate = $\sigma_t IAN \Delta x $\\
+$ [\frac{particles}{s}] = [\frac{cm_2}{nucleaus}][\frac{particles}{cm^2 s}][cm^2][\frac{nuclei}{cm^3}][cm]$\\
+$\sigma+t$ is effective cross sectional area that a nucleus presents to a neutron units of barns. $1 barn = 1 [b] = 10^-24 [cm^2]$\\
+
+Microscopic cross sections depend on relative speeds of the neutrons and nucleus and on nuclide (type of nucleus).\\
+$\sigma_t = \sigma_s + \sigma_a\\
+\sigma_t$ = total microscopic cross section \\
+$\sigma_s$ = scattering microscopic cross section \\
+$\sigma_a$ = absorption cross section  \\
+
+$\sigma_t = \sigma_s + \sigma_a = \sigma_e + \sigma_p + \sigma_in + \sigma_\alpha + \sigma_f + \sigma_n,2n + \sigma_n,3n \sigma_n.\alpha + \sigma_n,p \\
+\sigma_e$ = elastic scattering microscopic cross section \\
+$\sigma_e,r$ = resonance elastic scattering microscopic cross section \\
+$\sigma_p$ = potential scattering microscopic cross section \\
+$\sigma_in$ = inelastic scattering microscopic cross section \\
+$\sigma_\alpha$ = radiative capture microscopic cross section \\
+$\sigma_f$ = fission microscopic cross section \\
+$\sigma_n,2n$ = 2 neutrons emitted microscopic cross section \\
+$\sigma_n,3n$ = 3 neutrons emitted microscopic cross section \\
+$\sigma_n,\alpha$ = alpha particle emitted microscopic cross section \\
+$\sigma_n,p$ = proton emitted microscopic cross section \\
+
+$\frac{\sigma_x}{\sigma_t} =$ probability in a given collision that X will occur.\\
+Macroscopic cross section for reaction X $\Sigma = N \sigma_x [cm^-1]$ \\
+
+For multiple isotopes $N^i = \gamma^i \frac{\rho N_a}{M}$ where $\gamma^i$ is the atom fraction\\
+Density from weight percent $N^i = w^i \frac{\rho N_a}{M_i}$ where $w^i = \gamma^i \frac{M}{M^i}$\\
+I(x) = intensity of neutrons that reach X distance into material without interacting with atoms \\
+$I(x + dx) = AI(x) + PR + -LR = AI(x) + 0 + \Sigma I(x)Adx$ cancel the area \\
+$I(x + dx) = I(x) - \Sigma dx$ simplify \\
+$\frac{dI}{dx} = - \Sigma (x)$ integrate both sides $ I_x = I_0e^{(-\Sigma x)} $\\
+Mean free path = $\frac{1}{\Sigma_t}$\\
+Absorption mean free path = $\frac{1}{\Sigma_a}$\\
+Scattering mean free path = $\frac{1}{\Sigma_s}$\\
+$\Sigma_t = \Sigma_s + \Sigma_a$\\
+$1 = \frac{\Sigma_s}{\Sigma_t} + \frac{\Sigma_a}{\Sigma_t}$\\
+
+Molar mass $A_x = \Sigma_i (\frac{\gamma_i}{100})A_i$ [g/mol] \\
+Atomic mass $M_x = A_x * U$ [amu]\\
+
+Example:\\
+$H_2O$ molar mass\\
+$2M_H + M_O = M_{H_2O}$\\
+$2(\gamma_H M_{H_1} + (1 - \gamma_{H_1})M_{H_2} + M_O$\\
+Molar density:\\
+$N_{H_2O} = \frac{\rho_{H_2O} N_a}{M_{H_2O}}\\
+N_H = 2N_{H_2O}\\
+N_{H_1} = \gamma_{H_1} N_H\\
+N_{H_2} = \gamma_{H_2} N_H\\
+N_O = N_{H_2O}\\ $
+Macroscopic scattering cross section of $H_2O$\\
+$ \Sigma^{H_2O}_s = N_H \sigma_s^H + N_O \sigma_s^O$ \\
+
+
+
+\end{document}
