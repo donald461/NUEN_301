@@ -1,0 +1,190 @@
+\documentclass[12pt,fleqn, parskip=full]{scrartcl}
+
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{float}
+
+\pagestyle{fancy}
+\lhead{Donald Doyle UIN: 128005953}
+
+\title{NUEN 301 \\
+Test 3}
+\author{Donald Doyle UIN: 128005953}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Problem 0}
+ "The work that I am turning in is my own. I did not work with others nor did I communicate my answers to others. An Aggie does not lie, cheat or steal, or tolerate those who do.” \\ \\
+Donald Doyle  UIN: 128005953
+
+\section{Problem 1}
+a) $W_235 \frac{M_u}{M_235} + W_238 \frac{M_u}{M_238} = 1$\\ 
+
+$\frac{1}{M_u} = \frac{W_235}{M_235} + \frac{W_238}{M238}$\\
+
+$M_u = \frac{1}{\frac{0.935}{235} + \frac{0.065}{238}} = 235.19$\\
+
+$\Sigma_a = \frac{(18.74)(1.602*10^{23}}{235.19}(0.935\frac{235.19}{235}1.65*10^{-24}+0.065\frac{235.19}{238}0.255*10^{-24}) = 0.0199 [cm^{-1}]$ \\
+
+$\Sigma_{transport} = \frac{(18.74)(1.602*10^{23}}{235.19}(0.935\frac{235.19}{235}6.80*10^{-24}+0.065\frac{235.19}{238}6.90*10^{-24}) = 0.0870 [cm^{-1}]$ \\
+
+$\Sigma_f = \frac{(18.74)(1.602*10^{23}}{235.19}(0.935\frac{235.19}{235}1.40*10^{-24}+0.065\frac{235.19}{238}0.095*10^{-24}) = 0.0168 [cm^{-1}]$ \\
+
+b) $ D = \frac{1}{3 \Sigma_{transport}} = \frac{1}{3(0.0870)} = 3.83$\\
+
+c) $L = \sqrt{\frac{D}{\Sigma_a}} = \sqrt{\frac{3.83}{0.0199}} = 13.87$\\
+
+d) $ 1 = k = \frac{v\Sigma_f}{\Sigma_a + DB_g} \Rightarrow B_g = \frac{v\Sigma_f - \Sigma_a}{D} = \frac{(2.60)(0.0168) - 0.0199}{3.83} = 0.00621$\\
+
+e) $ B_g^2 = \frac{\pi}{\tilde{R}} \Rightarrow \tilde{R} = \frac{\pi}{B_g} = \frac{\pi}{0.006221} = 505.89 [cm]$\\
+
+f) $\tilde{R} = R + 2D \Rightarrow R = \tilde{R} - 2D = 505.89 - 2(3.83) = 498.32 [cm]$
+
+\section{Problem 2}
+1)
+a) $0 \leq x \leq a$ \quad $-D_1\frac{d^2\phi_1}{dx^2} + \Sigma_{a,1} \phi_1(x) = S_1$\\
+
+$\phi_1(x) = A_1cosh(\frac{x}{L_1}+C_1sinh(\frac{x}{L_1}) + \frac{S_1}{\Sigma_{a,1}}$
+
+b) $a \leq x \leq b$ \quad $-D_2\frac{d^2\phi_2}{dx^2} + \Sigma_{a,2} \phi_2(x) = 0$\\
+
+$\phi_2(x) = A_2cosh(\frac{x}{L_2}+C_2sinh(\frac{x}{L_2})$
+
+c) $J_{x,1}(0) = -D_1\frac{d\phi_1}{dx}|_0 = 0$\\
+$\phi_2(b + 2D_2) = 0$\\
+
+d) $\phi_1(a) = \phi_2(a)$\\
+$ -D_1\frac{d\phi_1}{dx}|_a = -D_2\frac{d\phi_2}{dx}|_a$
+
+e) $\frac{d\phi_1}{dx} = \frac{A_1}{L_1}sinh(\frac{x}{L_1}$\\
+
+$\frac{d\phi_1}{dx}|_0 = \frac{C_1}{L_1} \Rightarrow C_1 = 0$\\
+
+$\phi_2(\tilde{b}) = 0 = A_2cosh(\frac{a-\tilde{b}}{L_2}) + C_2sinh(\frac{a-\tilde{b}}{L_2})$\\
+
+$\phi_1(a) = \phi_2(a) \Rightarrow A_1conh(\frac{a}{L_1})+ \frac{S_1}{\Sigma_{a,1}}) = A_2$\\
+
+$-D_1\frac{d\phi_1}{dx}|_a = -D_2\frac{d\phi_2}{dx}|_a \Rightarrow -D_1\frac{A_1}{L_1}sinh(\frac{a}{L_1} = -D_2\frac{C_2}{L_2}$\\
+
+$\left[
+\begin{array}{ccc}
+	0 & cosh(\frac{a-\tilde{b}}{L_2})	& sinh(\frac{a-\tilde{b}}{L_2}) \\
+	cosh(\frac{a}{L_1}) & -1 & 0 \\
+	\frac{D_1}{L_1}sinh(\frac{a}{L_1}) & 0 & \frac{D_2}{L_2}
+\end{array}
+\right]
+\left[
+\begin{array}{c}
+A_1 \\ A_2 \\ C_2
+\end{array}
+\right] = 
+\left[
+\begin{array}{c}
+0 \\ \frac{-S_1}{\Sigma_{a,1}} \\ 0
+\end{array}
+\right]$\\
+
+$L_1 = 2.236$ \quad $L_2 = 3.162$ \quad $\tilde{b} = 15$\\
+
+$\left[
+\begin{array}{ccc}
+	0 & cosh(\frac{5-15}{3.162})	& sinh(\frac{5-15}{3.162}) \\
+	cosh(\frac{5}{2.236}) & -1 & 0 \\
+	\frac{1}{2.236}sinh(\frac{5}{2.236}) & 0 & \frac{3}{3.162}
+\end{array}
+\right]
+\left[
+\begin{array}{c}
+A_1 \\ A_2 \\ C_2
+\end{array}
+\right] = 
+\left[
+\begin{array}{c}
+0 \\ \frac{-3}{0.2} \\ 0
+\end{array}
+\right]$\\
+
+$\left[
+\begin{array}{ccc}
+	0 & 11.84 & -11.80\\
+	4.7314 & -1 & 0\\
+	2.068 & 0 & 0.9487 
+\end{array}
+\right]
+\left[
+\begin{array}{c}
+A_1 \\ A_2 \\ C_2
+\end{array}
+\right] = 
+\left[
+\begin{array}{c}
+0 \\ -15 \\ 0
+\end{array}
+\right]$\\
+
+$A_1 = -2.173$ \quad $A_2 = 4.720$ \quad $C_2 = 4.736$\\
+
+f) $\phi_1(x) = -2.173cosh(\frac{x}{2.236}) + 15$\\
+
+$\phi_2(x) = 4.72cosh(\frac{x-15}{3.873}+7.736sinh(\frac{x-15}{3.873})$
+
+g)$\phi_1(0) = -2.173cosh(\frac{0}{2.236}) + 15 = 12.83$\\
+
+$\phi_1(\frac{a}{2}) = -2.173cosh(\frac{2.5}{2.236}) + 15 = 11.32$\\
+
+$\phi_1(a) = -2.173cosh(\frac{5}{2.236}) + 15 = 4.72$\\
+
+$\phi_2(9) = 4.72cosh(\frac{9-15}{3.873}+7.736sinh(\frac{9-15}{3.873}) = 0.967$\\
+
+
+\section{Problem 3}
+1)a) $\phi(x) = Acosh(\frac{x-x_0}{L})+Csinh(\frac{x-x_0}{L})$\\
+
+b) $\phi(a) = 0$\\
+
+$J(x_0) = \frac{S}{2} = \frac{d\phi}{dx}|_{x_0} = \frac{S}{2}$\\
+
+c) $L = 3.16$
+
+$\phi(a) = Acosh(\frac{x-x_0}{L})+Csinh(\frac{x-x_0}{L}) = Acosh(\frac{20-7}{3.16})+Csinh(\frac{20-7}{3.16}) = 30.6A + 30.584C = 0$\\
+
+$\frac{d\phi}{dx}|_{x_0} = \frac{-A}{L}sinh(\frac{x_0-x_0}{L})+\frac{-C}{L}cosh(\frac{x_0-x_0}{L}) = \frac{-C}{L} = \frac{S}{2} \Rightarrow \frac{-C}{3.16} = \frac{5}{2} \Rightarrow C = -7.9$\\
+
+$30.6A + 30.584(-7.9) = 0 \Rightarrow A = 7.896$\\
+
+$\phi(x) = -7.896cosh(\frac{x-7}{3.16} +7.9sinh(\frac{x-7}{1.36})$\\
+ 2) 
+ 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.5]{Image_1}
+\end{figure}
+
+\begin{tabular}{|c|c|}
+\hline
+x & $\phi$ \\
+\hline
+2.5 & 32.81\\
+\hline
+5 & 14.87\\
+\hline
+7 & 7.90\\
+\hline
+7.5 & 6.24\\
+\hline
+10 & 3.051\\
+\hline
+12.5 & 1.324\\
+\hline
+15 & 0.603\\
+\hline
+17.5 & 0.229\\
+\hline
+
+\end{tabular}
+
+\end{document}
